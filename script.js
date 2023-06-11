@@ -26,29 +26,29 @@ btn.addEventListener("click", function(){
             const iconId = data.weather[0].icon;
             const iconUrl = `http://openweathermap.org/img/w/${iconId}.png`;
 
-            const temperatureSpan = document.createElement('p');
-            temperatureSpan.textContent = "Температура: " + temperature;
-            weatherInfo.appendChild(temperatureSpan);
+            const temperatureParagraph = document.createElement('p');
+            temperatureParagraph.textContent = "Температура: " + temperature;
+            weatherInfo.appendChild(temperatureParagraph);
 
-            const pressureSpan = document.createElement('p');
-            pressureSpan.textContent = "Тиск: " + pressure;
-            weatherInfo.appendChild(pressureSpan);
+            const pressureParagraph = document.createElement('p');
+            pressureParagraph.textContent = "Тиск: " + pressure;
+            weatherInfo.appendChild(pressureParagraph);
 
-            const descriptionSpan = document.createElement('p');
-            descriptionSpan.textContent = "Опис: " + description;
-            weatherInfo.appendChild(descriptionSpan);
+            const descriptionParagraph = document.createElement('p');
+            descriptionParagraph.textContent = "Опис: " + description;
+            weatherInfo.appendChild(descriptionParagraph);
 
-            const humiditySpan = document.createElement('p');
-            humiditySpan.textContent = "Вологість: " + humidity;
-            weatherInfo.appendChild(humiditySpan);
+            const humidityParagraph = document.createElement('p');
+            humidityParagraph.textContent = "Вологість: " + humidity;
+            weatherInfo.appendChild(humidityParagraph);
 
-            const speedSpan = document.createElement('p');
-            speedSpan.textContent = "Швидкість вітру: " + speed;
-            weatherInfo.appendChild(speedSpan);
+            const speedParagraph = document.createElement('p');
+            speedParagraph.textContent = "Швидкість вітру: " + speed;
+            weatherInfo.appendChild(speedParagraph);
 
-            const degSpan = document.createElement('p');
-            degSpan.textContent = "Напрям(у градусах): " + deg;
-            weatherInfo.appendChild(degSpan);
+            const degParagraph = document.createElement('p');
+            degParagraph.textContent = "Напрям(у градусах): " + deg;
+            weatherInfo.appendChild(degParagraph);
 
             const iconElement = document.createElement('img');
             iconElement.src = iconUrl;
